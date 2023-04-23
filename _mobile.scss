@@ -1,0 +1,35 @@
+@media (max-width: 700px) {
+    .showcase {
+        background-size: 140% auto !important;
+    }
+       
+   .conteiner {
+        display: flex;
+        flex-direction: column;
+    }
+        
+    %btn {
+        margin-top: 37%;
+        margin-right: 49%;
+        padding-bottom: 5%;
+     }
+     
+    %btn2 {
+        width: 15vh;
+        height: 4vh;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    section {
+        width: 70% !important;
+        text-align: center;
+    }
+
+    img {
+        width: 130px;
+    }
+
+}

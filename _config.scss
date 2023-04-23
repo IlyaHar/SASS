@@ -1,0 +1,26 @@
+$font-best: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$dark-color: #141414de;
+$light-color: #c3c3c378;
+
+@function set-text-color($color){
+    @if(lightness($color)>70){
+       @return #000
+    } @else {
+       @return #fff;
+    }
+ }
+
+ @mixin set-background($color){
+    background-color: $color;
+    color: set-text-color($color);
+ }
+
+ $spaceamounts:(1,2,3,4,5);
+@each $space in $spaceamounts{
+   .m-#{$space}{
+      margin: #{$space}rem;
+   }
+   .my-#{$space}{
+      margin: #{$space}rem 0;
+   }
+}

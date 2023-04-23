@@ -1,0 +1,36 @@
+%btn {
+    height: 50vh;
+    margin-top: 54%;
+    margin-left: 1%;
+
+    & {
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+}
+
+.button-conteiner {
+    @extend %btn;
+}
+
+%btn2 {
+    width: 20vh;
+    height: 5vh;
+    cursor: pointer;
+    @include set-background($light-color);
+    margin-left: 2vh;
+    border: solid silver;
+    border-radius: 1vh;
+    font-family: $font-best;
+    font-weight: 700;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+}
+
+button {
+    @extend %btn2
+}
+
